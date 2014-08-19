@@ -7,5 +7,6 @@
             "email": "chris@cemerson.co.uk"
         }
     ],
+    "license": "GPL-3.0",
     "require": {}
 }
