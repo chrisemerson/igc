@@ -1,0 +1,11 @@
+{
+    "name": "cemerson/igc",
+    "description": "An open source library for parsing and reading information from .igc files",
+    "authors": [
+        {
+            "name": "Chris Emerson",
+            "email": "chris@cemerson.co.uk"
+        }
+    ],
+    "require": {}
+}
