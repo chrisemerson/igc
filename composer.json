@@ -9,7 +9,16 @@
     ],
     "license": "GPL-3.0",
     "require": {},
+    "require-dev": {
+        "mikey179/vfsStream": "~1.3.0",
+        "phpunit/phpunit": "~4.2.0"
+    },
     "autoload": {
-        "psr-4": {"CEmerson\\IGC\\": "src/"}
+        "psr-4": {
+            "CEmerson\\IGC\\": [
+                "src/",
+                "tests/"
+            ]
+        }
     }
 }
