@@ -8,5 +8,8 @@
         }
     ],
     "license": "GPL-3.0",
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {"CEmerson\\IGC\\": "src/"}
+    }
 }
