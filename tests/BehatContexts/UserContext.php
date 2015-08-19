@@ -1,4 +1,5 @@
 <?php
+namespace CEmerson\IGC\BehatContexts;
 
 use Behat\Behat\Context\Context;
 use Behat\Behat\Context\SnippetAcceptingContext;
@@ -8,7 +9,7 @@ use Behat\Gherkin\Node\TableNode;
 /**
  * Defines application features from the specific context.
  */
-class FeatureContext implements Context, SnippetAcceptingContext
+class UserContext implements Context, SnippetAcceptingContext
 {
     /**
      * Initializes context.
