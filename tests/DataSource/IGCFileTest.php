@@ -1,11 +1,13 @@
 <?php
 namespace CEmerson\IGC\DataSource;
 
+use PHPUnit_Framework_TestCase;
 use org\bovigo\vfs\vfsStream;
 use org\bovigo\vfs\vfsStreamDirectory;
 use org\bovigo\vfs\vfsStreamFile;
+use InvalidArgumentException;
 
-class IGCFileTest extends \PHPUnit_Framework_TestCase
+class IGCFileTest extends PHPUnit_Framework_TestCase
 {
     /** @var vfsStreamDirectory */
     private $directory;
@@ -37,7 +39,7 @@ class IGCFileTest extends \PHPUnit_Framework_TestCase
 
     public function testThrowsExceptionWhenFileDoesntExist()
     {
-        $this->setExpectedException('InvalidArgumentException');
+        $this->setExpectedException(InvalidArgumentException::class);
 
         new IGCFile($this->directory->url() . "/doesntexist.igc");
     }
