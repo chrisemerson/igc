@@ -1,10 +1,9 @@
 <?php
-namespace CEmerson\IGC\BehatContexts;
-
 use Behat\Behat\Context\Context;
 use Behat\Behat\Context\SnippetAcceptingContext;
 use Behat\Gherkin\Node\PyStringNode;
 use Behat\Gherkin\Node\TableNode;
+use PHPUnit_Framework_Assert as Assert;
 
 /**
  * Defines application features from the specific context.

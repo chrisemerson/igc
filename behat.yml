@@ -1,4 +1,6 @@
 default:
+    autoload:
+        '': %paths.base%/features/Contexts
     suites:
         default:
-            contexts: [CEmerson\IGC\BehatContexts\UserContext]
+            contexts: [UserContext]

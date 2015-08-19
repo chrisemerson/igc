@@ -1,8 +1,6 @@
 <?php
 namespace CEmerson\IGC;
 
-use CEmerson\IGC\DataSource\IGCDataSource;
-
 class IGCTrace
 {
     /** @var IGCDataSource */

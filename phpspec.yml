@@ -1,0 +1,4 @@
+suites:
+    default:
+        namespace: CEmerson\IGC
+        psr4_prefix: CEmerson\IGC

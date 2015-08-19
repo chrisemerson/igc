@@ -1,5 +1,7 @@
 <?php
-namespace CEmerson\IGC\DataSource;
+namespace CEmerson\IGC\DataSources;
+
+use CEmerson\IGC\IGCDataSource;
 
 class IGCString implements IGCDataSource
 {

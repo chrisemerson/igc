@@ -1,5 +1,5 @@
 <?php
-namespace CEmerson\IGC\DataSource;
+namespace CEmerson\IGC;
 
 interface IGCDataSource
 {

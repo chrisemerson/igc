@@ -1,5 +1,5 @@
 <?php
-namespace CEmerson\IGC\DataSource;
+namespace CEmerson\IGC\DataSources;
 
 use PHPUnit_Framework_TestCase;
 use org\bovigo\vfs\vfsStream;
