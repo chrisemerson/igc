@@ -7,11 +7,12 @@
             "email": "chris@cemerson.co.uk"
         }
     ],
-    "license": "GPL-3.0",
+    "license": "MIT",
     "require": {},
     "require-dev": {
         "mikey179/vfsStream": "~1.3.0",
-        "phpunit/phpunit": "~4.2.0"
+        "phpunit/phpunit": "~4.2.0",
+        "behat/behat": "^3.0"
     },
     "autoload": {
         "psr-4": {
