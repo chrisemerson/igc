@@ -10,15 +10,15 @@ class IGCFile implements IGCDataSource
 
     public function __construct($filename)
     {
-        if (!file_exists($filename)) {
-            throw new InvalidArgumentException("IGC file not found: " . $filename);
-        }
-
         $this->filename = $filename;
     }
 
     public function getIGCContents()
     {
+        if (!file_exists($this->filename)) {
+            throw new InvalidArgumentException("IGC file not found: " . $this->filename);
+        }
+
         return file_get_contents($this->filename);
     }
 }
