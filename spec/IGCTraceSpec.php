@@ -5,7 +5,6 @@ use CEmerson\IGC\IGCDataSource;
 use CEmerson\IGC\IGCTrace;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
-use DateTime;
 
 class IGCTraceSpec extends ObjectBehavior
 {
