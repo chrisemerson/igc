@@ -14,17 +14,21 @@ class IGCTrace
         $this->igcLines = array_map('trim', explode("\n", $dataSource->getIGCContents()));
     }
 
-    public function getFlightDate()
+    public function getFlightInfo()
     {
-        foreach ($this->igcLines as $igcLine) {
-            if (strcmp(substr($igcLine, 0, 5), "HFDTE") == 0) {
-                $flightDate = new DateTime();
-                $flightDate->setTimestamp(mktime(12, 0, 0, substr($igcLine, 7, 2), substr($igcLine, 5, 2), substr($igcLine, 9, 2)));
+        $headerLines = [];
 
-                return $flightDate;
+        foreach ($this->igcLines as $igcLine) {
+            if (strcmp(substr($igcLine, 0, 1), 'H') == 0) {
+                $headerLines[] = $igcLine;
             }
         }
 
-        throw new InvalidIGCFileException("Required field HFDTE not present in IGC file");
+        return new FlightInfo($headerLines);
+    }
+
+    public function getFlightDate()
+    {
+        return $this->getFlightInfo()->getFlightDate();
     }
 }
