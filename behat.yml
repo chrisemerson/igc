@@ -1,6 +1,0 @@
-default:
-    autoload:
-        '': %paths.base%/features/Contexts
-    suites:
-        default:
-            contexts: [UserContext]
