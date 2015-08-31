@@ -26,9 +26,4 @@ class IGCTrace
 
         return new FlightInfo($headerLines);
     }
-
-    public function getFlightDate()
-    {
-        return $this->getFlightInfo()->getFlightDate();
-    }
 }
