@@ -1,9 +1,6 @@
 <?php
 namespace CEmerson\IGC;
 
-use CEmerson\IGC\Exceptions\InvalidIGCFileException;
-use DateTime;
-
 class IGCTrace
 {
     /** @var string[] */
